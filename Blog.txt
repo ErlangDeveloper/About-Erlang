@@ -1,0 +1,3 @@
+1.R17以下的版本，原子query为关键字，使用该原子会导致文件无法编译
+2.R17前后的版本，对于中文字符串的读取写入有明显区别，R17之前从文件中读入的中文字符串可以直接使用io:format直接输出，
+	R17以后读入的则为unicode编码，需要使用binary_to_list(unicode:characters_to_binary(Characters))转换后输出
