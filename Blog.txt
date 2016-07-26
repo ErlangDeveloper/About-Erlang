@@ -1,3 +1,7 @@
 1.R17以下的版本，原子query为关键字，使用该原子会导致文件无法编译
 2.R17前后的版本，对于中文字符串的读取写入有明显区别，R17之前从文件中读入的中文字符串可以直接使用io:format直接输出，
-	R17以后读入的则为unicode编码，需要使用binary_to_list(unicode:characters_to_binary(Characters))转换后输出
+	R17以后读入的则为unicode编码，需要使用binary_to_list(unicode:characters_to_binary(Characters))转换后输出，在
+	旧版本中运行上述代码会导致输出乱码
+3.在使用时间相关的函数计算时间戳时，需要考虑时区带来的影响
+4.函数名，记录的Field是原子，但最好不要这么用：'Give a name'	
+5.
