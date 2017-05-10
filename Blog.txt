@@ -5,4 +5,5 @@
 3.在使用时间相关的函数计算时间戳时，需要考虑时区带来的影响
 4.函数名，记录的Field是原子，但最好不要这么用：'Give a name'	
 5.现在的主流mysql引擎中均存在mysql服务重启后无法重连的情况，目前正在着手准备解决方法
-6.linux上安装erl，在执行configure阶段报 odbc: ODBC library - link check failed 使用apt-get install unixodbc unixodbc-dev 解决
+6.安装erl配置./configure --prefix=/usr/local/servers/erlang --without-javac
+7.linux上安装erl，在执行configure阶段报 odbc: ODBC library - link check failed 使用apt-get install unixodbc unixodbc-dev 解决
