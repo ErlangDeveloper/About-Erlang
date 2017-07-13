@@ -27,7 +27,7 @@ merge([], [], R) -> R.
 %% 最大子数组
 %% -------------
 max_child_list([])->
-	[];
+    	[];
 max_child_list([X])->
 	[X];
 max_child_list(List)->
